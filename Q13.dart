@@ -1,4 +1,5 @@
-// Q12.	Write a program to display a pattern like a right angle triangle with a number using loop. The pattern like :
+// Q13.	Write a program to make such a pattern like a right angle triangle with a number which will repeat a number in a row. The pattern like :
+
 import 'dart:io';
 
 void main(){
