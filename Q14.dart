@@ -5,9 +5,9 @@ void main(){
   int count=1;
   for (var i = 0; i <5; i++) {
     for (var u = 0; u <i ; u++) {
- 
-      stdout.write("$count");
-          count++; 
+     stdout.write("$count");
+    
+     count++; 
     }
     print("");
   }
