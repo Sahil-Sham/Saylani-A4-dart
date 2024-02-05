@@ -4,13 +4,15 @@ import 'dart:io';
 void main(){
 stdout.write("Enter the list number:");
 String userinput =stdin.readLineSync()!;
+
 List<String> numberstring=userinput.split(" ");
 List<int> numbers=numberstring.map((String) => int.parse(String)).toList();
 
 print("Even number:");
-for (var number in numbers) {
-  if (number%2==0) {
-    print(number);
+
+for(int i = 0 ; i<numbers.length; i++){
+  if(numbers[i]%2 == 0){
+    print(numbers[i]);
   }
 }
 

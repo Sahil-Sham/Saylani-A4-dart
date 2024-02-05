@@ -2,11 +2,14 @@
 import 'dart:io';
 
 void main(){
-  stdout.write("Enter the digits:");
-  String digit=stdin.readLineSync()!;
-  int number=int.parse(digit);
-  int numbers=number;
-  while (numbers==true) {
-   number++;
-  }
+ stdout.write("Enter the digit:");
+String userinput =stdin.readLineSync()!;
+
+List<String> numberstring=userinput.split(" ");
+List<int> numbers=numberstring.map((String) => int.parse(String)).toList();
+int count=0;
+while (count<numbers.length){ ;
+ count++;
+  print("Sum of digits:$count");
+}
 }
