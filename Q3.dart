@@ -1,14 +1,25 @@
 import 'dart:io';
-void main(){
-  stdout.write("Enter a number to check prime number: ");
-  int userinput = int.parse(stdin.readLineSync()!);
-  
-  if(!(userinput%2 == 0)){
-   print("Not a Prime Number While it is an Even Number");
-  }else if(userinput%2 == 1){
-   print("Not a Prime Number While it is an Odd Number");
-  }else{
-    print("It is a Prime Number");
+void main(){ 
+  stdout.write("Enter a number to check Prime Number: ");
+  int number = int.parse(stdin.readLineSync()!);
+  bool result =  isPrime(number);
+    if(result){
+      print("Prime Number");
+    }else{
+      print("Not Prime Number");
+    }
   }
-
+                                  
+bool isPrime(int number){ // function 01234567
+ List<int> check = [];
+ for(var i = 1; i<=number; i++){
+    if(number%i == 0){
+      check.add(number);
+    }
+  } 
+  if(check.length > 2){
+   return false;
+  }else{
+    return true;
+  }
 }

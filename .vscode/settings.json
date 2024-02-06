@@ -1,0 +1,5 @@
+{
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.mouseWheelZoom": true,
+    "editor.wordWrap": "on"
+}
