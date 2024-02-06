@@ -1,15 +1,24 @@
 // Q5.	Write a program that calculates the sum of all the digits in a given number using a while loop.
 import 'dart:io';
 
-void main(){
- stdout.write("Enter the digit:");
-String userinput =stdin.readLineSync()!;
+void main() {
+  stdout.write("Enter the digit: ");
+  String userInput = stdin.readLineSync()!;
 
-List<String> numberstring=userinput.split(" ");
-List<int> numbers=numberstring.map((String) => int.parse(String)).toList();
-int count=0;
-while (count<numbers.length){ ;
- count++;
-  print("Sum of digits:$count");
-}
+  List<int> number = userInput.split(" ").map((String string) => int.parse(string)).toList();
+
+
+  // Calculate the sum of digits
+  int sum = 0;
+  int i = 0;
+  // for (int number in number) {
+  //   sum = sum + number;
+  // }
+  while(i <  number.length){
+    sum = sum + number[i];
+
+    i++; 
+  }
+    print("Sum of Numbers: $sum");
+
 }
