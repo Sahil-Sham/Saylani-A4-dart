@@ -8,7 +8,7 @@ String userinput =stdin.readLineSync()!;
 List<String> numberstring=userinput.split(" ");
 List<int> numbers=numberstring.map((String) => int.parse(String)).toList();
 
-stdout.write("Even number:");
+print("Even number:");
 
 for(int i = 0 ; i<numbers.length; i++){
   if(numbers[i]%2 == 0){
