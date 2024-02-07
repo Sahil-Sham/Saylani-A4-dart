@@ -11,6 +11,6 @@ for (var i = 1; i < number.length; i++) {
     value=number[i];
   }
 }
-
+print("List Numbers:$number");
 print("The largest element:$value");
 }
