@@ -19,6 +19,7 @@ void main() {
 
     i++; 
   }
+  print("List Numbers:$number");
     print("Sum of Numbers: $sum");
 
 }

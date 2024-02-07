@@ -15,7 +15,7 @@ for (var i = 0; i < number.length; i++) {
     maximumelement=number[i];
   }
 }
-print("List Number:$number");
+print("List Numbers:$number");
 print("Maximum Number:$maximumelement");
 print("Minimum Number:$minimumelement");
 }
