@@ -4,7 +4,7 @@ void main(){
     stdout.write("Enter the Numbers:");
 String elements =stdin.readLineSync()!;
 
-List<int> number=elements.split(",").map((String) => int.parse(String)).toList();
+List<int> number=elements.split(" ").map((String) => int.parse(String)).toList();
 int maximumelement=number[0];
 int minimumelement=number[0];
 for (var i = 0; i < number.length; i++) {
