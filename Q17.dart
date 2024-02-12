@@ -12,6 +12,7 @@ void main(){
     if (email=="sahil@gmail.com" && password=="123456") {
     print("Login Successfully");
     islogin=true;
+    break;
   }else{
     print("Login failed");
   }
