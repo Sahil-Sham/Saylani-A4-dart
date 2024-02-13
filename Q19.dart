@@ -2,15 +2,15 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Enter the graeter Number:");
+  stdout.write("Enter the greater Number: ");
   String value = stdin.readLineSync()!;
   List<String> user = value.split(" ");
   List<int> number = user.map((String) => int.parse(String)).toList();
   for (var i = 0; i < number.length; i++) {
     if (number[i] > 5) {
-      print("this number is greater than:${number[i]}");
+      print("This number is greater than: ${number[i]}");
     } else {
-      print("this number is less than:${number[i]}");
+      print("This number is less than: ${number[i]}");
     }
   }
 }
